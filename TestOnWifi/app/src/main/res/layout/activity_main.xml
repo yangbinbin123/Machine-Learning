@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.testonwifi.MainActivity"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12"
+        android:onClick="DeviceFunc"
+        android:layout_x="5dp"
+        android:layout_y="7dp"
+        android:text="DeviceFun" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_weight="0.12"
+        android:layout_x="115dp"
+        android:layout_y="6dp"
+        android:onClick="searchForPeers"
+        android:text="FindPeers" />
+
+    <Button
+        android:id="@+id/GO"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_x="226dp"
+        android:layout_y="6dp"
+        android:text="GOWNER" />
+
+    <TextView
+        android:id="@+id/wifistatus"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="60px"
+        android:layout_x="7dp"
+        android:layout_y="63dp"
+        android:text="The Wifi status" />
+
+    <TextView
+        android:id="@+id/connect"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_x="8dp"
+        android:layout_y="102dp"
+        android:text="Connected or not?" />
+
+    <TextView
+        android:id="@+id/groupLeader"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_x="8dp"
+        android:layout_y="142dp"
+        android:text="Group Leader or not?" />
+
+    <ListView
+        android:id="@+id/Listpeers"
+        android:layout_width="334dp"
+        android:layout_height="303dp"
+        android:layout_x="27dp"
+        android:layout_y="191dp" />
+
+</AbsoluteLayout>
